@@ -1,0 +1,60 @@
+.header-root {
+  border-bottom: 1px solid gray;
+
+  img {
+    cursor: pointer;
+  }
+
+  .list-title {
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .title:hover {
+      border-bottom: 3px solid aqua;
+      color: aqua;
+    }
+  }
+
+  .search-icon:hover {
+    color: aqua;
+  }
+}
+
+.hagtag-root {
+  .content {
+    border-radius: 10px;
+    background-color: #F0F0F0;
+    width: fit-content;
+    padding: 2px 10px 3px;
+
+  }
+
+  @keyframes bggradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  :hover {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: bggradient 15s ease infinite;
+    background-size: 300% 300%;
+    color: #FFF;
+  }
+
+
+}
